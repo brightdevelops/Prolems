@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <style>
+      th {
+        text-align: left;
+      }
+      input{
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><input type="text" id=""></td>
+            <td><input type="email" id=""></td>
+        </tr>
+        <tr>
+            <th>Telephone</th>
+            <th>Select Job</th>
+        </tr>
+        <tr>
+            <td><input type="tel" id="telephone"></td>
+            <td>
+                <select name="job-positions">
+                    <option value=""></option>
+                    <option value="Frontend-Developer">Frontend-Developer</option>
+                    <option value="Backend-Developer">Backend-Developer</option>
+                    <option value="Devops">Devops</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Message</th>
+        </tr>
+        <tr>
+            <td><textarea id=""></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+      </table>
+  </body>
+</html>
