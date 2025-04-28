@@ -4,6 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        background-color: #f0f2f5;
+      }
+
+      .container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+          "header header  "
+          "nav about "
+          "gallery about  "
+          "footer footer ";
+      }
+      .header {
+        background-color: rgb(17, 172, 233);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        grid-area: header;
+        border-radius: 7px;
+      }
+      .nav {
+        background-color: rgb(25, 46, 46);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        grid-area: nav;
+        border-radius: 7px;
+      }
+      .about {
+        background-color: rgba(196, 199, 206, 0.815);
+        color: rgb(66, 65, 65);
+        padding: 20px;
+        text-align: center;
+        grid-area: about;
+        border-radius: 7px;
+      }
+      .gallery-box {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        grid-area: gallery;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+        position: relative;
+      }
+      .footer {
+        background-color: rgb(25, 46, 46);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        grid-area: footer;
+        border-radius: 7px;
+      }
+      .project {
+        background-color: rgb(230, 235, 235);
+        color: black;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .gallery {
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="nav">Nav</div>
+      <div class="about">About</div>
+      <div class="gallery-box">
+        <div class="gallery">Gallery</div>
+        <div class="project1 project">Project</div>
+        <div class="project2 project">Project</div>
+        <div class="project3 project">Project</div>
+        <div class="project4 project">Project</div>
+        <div class="project5 project">Project</div>
+        <div class="project6 project">Project</div>
+        <div class="project7 project">Project</div>
+        <div class="project8 project">Project</div>
+        <div class="project9 project">Project</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
 </html>
