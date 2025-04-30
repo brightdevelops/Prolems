@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(201, 207, 212);
+      }
+      .container {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+      }
+      .profile {
+        width: 300px;
+        height: 25px;
+        background-color: rgb(91, 129, 161);
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .about {
+        width: 300px;
+        height: 160px;
+        background-color: aliceblue;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 5px;
+      }
+      .about-me {
+        display: flex;
+        flex-direction: column;
+      }
+      .skill-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 7px;
+        place-items: center;
+      }
+      .skill-card {
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        /* gap: 10px; */
+        width: 40px;
+        height: 25px;
+        padding: 3px;
+        background-color: rgb(92, 95, 97);
+        gap: 2px;
+        color: white;
+      }
+      .image {
+        background-image: url("./image.png");
+        width: 120px;
+        height: 110px;
+      }
+      .about-me {
+        width: 180px;
+        height: 150px;
+      }
+      .portfolio {
+        width: 300px;
+        height: 150px;
+        background-color: aliceblue;
+        padding: 10px;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+      }
+      .portfolio-project {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+      }
+      .portfolio-project-card {
+        width: 85px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        padding: 5px;
+        background-color: rgb(196, 206, 214);
+        border-radius: 5px;
+        margin-top: 5px;
+      }
+
+      .project {
+        width: 300px;
+        height: 70px;
+        background-color: aliceblue;
+        padding: 10px;
+        place-items: center;
+        border-radius: 5px;
+      }
+      .project-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+      }
+      .project-card {
+        display: grid;
+        place-items: center; /* this helps you allign the text in the center*/
+        width: 60px;
+        height: 40px;
+        padding: 5px;
+        background-color: rgb(196, 206, 214);
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .footer {
+        width: 300px;
+        height: fit-content;
+        background-color: rgba(46, 43, 43, 0.932);
+        text-align: center;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">My Profile</div>
+      <div class="about">
+        <div class="image">
+          <img
+            src="/Grid-Level1/image.png"
+            alt=""
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="about-me">
+          <div class="">
+            <span style="font-weight: bold; margin-left: 13px">About Me</span>
+            <p style="font-size: 15px; margin-top: 7px; margin-left: 13px">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              nihil corporis beatae,
+            </p>
+          </div>
+          <div class="">
+            <span class="skills" style="margin-left: 13px">Skills</span>
+            <div class="skill-card-container">
+              <div class="skill-card">Skill</div>
+              <div class="skill-card">Skill</div>
+              <div class="skill-card">Skill</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio">
+        <span style="margin-left: -235px">Portfolio</span>
+        <div class="portfolio-project">
+          <div class="portfolio-project-card">Project</div>
+          <div class="portfolio-project-card">Project</div>
+          <div class="portfolio-project-card">Project</div>
+          <div class="portfolio-project-card">Project</div>
+          <div class="portfolio-project-card">Project</div>
+          <div class="portfolio-project-card">Project</div>
+        </div>
+      </div>
+      <div class="project">
+        Project
+        <div class="project-container">
+          <div class="project-card">Project</div>
+          <div class="project-card">Project</div>
+          <div class="project-card">Project</div>
+          <div class="project-card">Project</div>
+        </div>
+      </div>
+      <div class="footer">2025</div>
+    </div>
+  </body>
+</html>
